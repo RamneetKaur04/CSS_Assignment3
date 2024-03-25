@@ -1,0 +1,149 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image: url('background.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #db37db;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f5f5f5; /* Light gray background color */
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.product-info {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.product-info img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.features {
+    text-align: center;
+}
+
+.features h2 {
+    color: #dd29d7;
+}
+
+.features ul {
+    list-style: none;
+    padding: 0;
+}
+
+.features li {
+    margin-bottom: 10px;
+}
+
+.footer {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.logo img {
+    max-width: 100px;
+}
+
+.quick-contact-form {
+    margin-top: 20px;
+}
+
+.quick-contact-form h3 {
+    color: #d63edc;
+}
+
+.quick-contact-form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.quick-contact-form input,
+.quick-contact-form textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(153, 242, 254, 0.9);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.quick-contact-form input:focus,
+.quick-contact-form textarea:focus {
+    outline: none;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.quick-contact-form textarea {
+    height: 100px;
+}
+
+.quick-contact-form button {
+    padding: 10px 20px;
+    background-color: #fb2fc8;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.quick-contact-form button:hover {
+    background-color: #e65100;
+}
+
+.company-info p {
+    color: #31f92e; /* Change font color to white */
+}
+
+/* SVG effect */
+.svg-effect {
+    position: relative;
+    overflow: hidden;
+}
+
+.svg-effect::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 120%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(255, 204, 0, 0), rgba(255, 204, 0, 0.8));
+    transform: translateX(-20%);
+    transition: transform 0.5s;
+}
+
+.svg-effect:hover::before {
+    transform: translateX(100%);
+}
